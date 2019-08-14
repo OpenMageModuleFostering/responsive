@@ -49,13 +49,13 @@
     .registered-customer .required{text-align: left; margin-top: 10px}    
     
     /* My Dashboard */
-    .col-order-date, .col-ship-to, .col-order-total{display: none !important}
+    .col-order-date, .col-ship-to, .col-order-total, .col-order-status{display: none !important}
     /*.title-buttons{text-align: left}*/
     /* checkout /cart */
     .cart .totals{margin-top: 20px}
     #shopping-cart-table .item-editable{display: none}
     #shopping-cart-table .item-image{display: none}
-    
+    .data-table .col-wishlist{display: none}
     /* catalog category */
     .pager-responsive .amount{display: none}
     .pager-responsive .limiter label{display: none}
@@ -77,6 +77,9 @@
     /* bootstrap 3 fix the scroll bar of Navbar on Mobile device */
     .navbar-collapse {max-height: none;}
     .dropdown-menu{padding-left: 8px;}
+    
+    /* footer */
+    .footer .footer-right{text-align: left}
 }
  
 /* Landscape phones and down */
@@ -84,8 +87,19 @@
     
     /* catalog category */
     .block-subscribe, .block-compare, .block-poll, .block-viewed, .block-tags, .paypal-logo{display: none}
-    
     .col-main .category-image{display: none}
     
+    /* catalog product view */
+    .products-list .product-shop{margin-left: 0}
+    .sorter .sort-by label{display: none}
+    
+    /* product options */
+    .product-options{padding: 0}
+    
+    /* onepage checkout */
+    .data-table td {padding:3px 8px;}
+    .data-table thead th{padding:3px 2px;}    
+    .cart .title-buttons .checkout-types{float:left; margin-top: 10px;}
+    .order-review .buttons-set button.button{float: left; margin-left: 0}
     
 }
