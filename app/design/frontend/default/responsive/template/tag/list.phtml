@@ -25,7 +25,7 @@
  */
 ?>
 <div class="box-collateral box-tags">
-    <h2><?php echo $this->__('Product Tags') ?></h2>
+   <!-- <h2><?php //echo $this->__('Product Tags') ?></h2>-->
     <?php echo $this->getChildHtml('list_before')?>
     <?php if( $this->getCount() ): ?>
     <h3><?php echo $this->__('Other people marked this product with these tags:') ?></h3>
@@ -37,17 +37,11 @@
     </script>
     <?php endif; ?>
     <form id="addTagForm" action="<?php echo $this->getFormAction(); ?>" method="get">
-        <div class="form-add">
-            <label for="productTagName"><?php echo $this->__('Add Your Tags:') ?></label>            
-            <div class="input-group">
-                <input type="text" class="input-text required-entry form-control" name="productTagName" id="productTagName" />
-                <div class="input-group-btn">
-                    <button type="button" title="<?php echo $this->__('Add Tags') ?>" class="button btn btn-default" onclick="submitTagForm()">
-                        <?php echo $this->__('Add Tags') ?>
-                    </button>
-                </div>
-            </div>
-        </div>
+	<p for="productTagName"><?php echo $this->__('Your Tags') ?></p>            
+	<input type="text" class="input-text required-entry form-control" name="productTagName" id="productTagName" />
+	<button style="margin-top:15px" type="button" title="<?php echo $this->__('Add Tags') ?>" class="button btn btn-default" onclick="submitTagForm()">
+	    <?php echo $this->__('Add Tags') ?>
+	</button>
     </form>
     <p class="note"><?php echo $this->__("Use spaces to separate tags. Use single quotes (') for phrases.") ?></p>
     <script type="text/javascript">

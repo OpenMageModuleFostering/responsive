@@ -38,8 +38,8 @@
     <h2><?php echo $this->__('Additional Information') ?></h2>
     <div id="product-attribute-specs-table">        
         <?php foreach ($_additional as $_data): ?>
-            <div class="col-sm-1 col-xs-12 label label-info"><?php echo $this->escapeHtml($this->__($_data['label'])) ?></div>
-            <div class="col-sm-11 col-xs-12 data"><?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></div>
+            <p><span style="font-weight: bold"><?php echo $this->escapeHtml($this->__($_data['label'])) ?></span>:
+            <span class="data"><?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></span></p>
         <?php endforeach; ?>        
     </div>
     <script type="text/javascript">decorateTable('product-attribute-specs-table')</script>

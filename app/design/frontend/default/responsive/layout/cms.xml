@@ -61,6 +61,22 @@ Default layout, loads most of the pages
 
     <cms_index_index translate="label">
         <label>CMS Home Page</label>
+        <reference name="head">
+             <!-- script for jcarousel -->        
+            <action method="addCss"><stylesheet>css/jcarousel/jcarousel.skeleton.css</stylesheet></action>
+		<action method="addItem"><type>skin_js</type><name>js/jquery.jcarousel.min.js</name></action>
+            <!-- end script for jcarousel -->
+        </reference>
+        
+        <reference name="right">
+            <block type="tag/popular" name="tags_popular" template="tag/popular.phtml"/>
+        </reference>
+        
+        <reference name="content">
+            <block type="core/template" name="home.sectors" template="tvtheme/sectors.phtml" />
+            <block type="core/template" name="new.arrival" template="tvtheme/new-arrival.phtml" />
+            <block type="core/template" name="best.sale" template="tvtheme/best-sale.phtml" />
+        </reference>
     </cms_index_index>
 
     <cms_index_defaultindex>

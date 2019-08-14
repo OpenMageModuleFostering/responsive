@@ -39,19 +39,19 @@
     }
 //]]>
 </script>
-<div class="block block-poll">
-    <div class="block-title">
-        <strong><span><?php echo $this->__('Community Poll') ?></span></strong>
+<div class="block block-poll panel panel-default">
+    <div class="block-title panel-heading">
+        <?php echo $this->__('Community Poll') ?>
     </div>
     <form id="pollForm" action="<?php echo $action ?>" method="post" onsubmit="return validatePollAnswerIsSelected();">
-        <div class="block-content">
+        <div class="block-content panel-body">
             <p class="block-subtitle"><?php echo $this->escapeHtml($poll->getPollTitle()); ?></p>
             <?php if( $poll_answers ): ?>
             <ul id="poll-answers">
                 <?php foreach( $poll_answers as $answer ): ?>
                 <li>
                     <input type="radio" name="vote" class="radio poll_vote" id="vote_<?php echo $answer->getId() ?>" value="<?php echo $answer->getAnswerId() ?>" />
-                    <span class="label"><label for="vote_<?php echo $answer->getId() ?>"><?php echo $this->escapeHtml($answer->getAnswerTitle()) ?></label></span>
+                    <span for="vote_<?php echo $answer->getId() ?>"><?php echo $this->escapeHtml($answer->getAnswerTitle()) ?></span>
                 </li>
                 <?php endforeach; ?>
             </ul>
