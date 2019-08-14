@@ -61,11 +61,7 @@ Default layout, loads most of the pages
 
                 <action method="addItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>
                 <action method="addItem"><type>skin_js</type><name>js/ie6.js</name><params/><if>lt IE 7</if></action>
-                
-                <!-- ajax login css and javascript -->
-                <action method="addCss"><stylesheet>css/ajaxlogin/login.css</stylesheet></action>
-                <action method="addItem"><type>skin_js</type><name>js/ajaxlogin/login.js</name></action>
-            </block>/
+            </block>
 
             <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">
                 <label>Page Top</label>
@@ -119,12 +115,6 @@ Default layout, loads most of the pages
         </block>
 
         <block type="core/profiler" output="toHtml" name="core_profiler"/>
-        
-        <!-- ajax login -->
-        <reference name="root">
-            <block type="core/template" name="ajax_login" template="ajaxlogin/quick.phtml" />
-        </reference>
-        
     </default>
 
     <print translate="label" module="page">
