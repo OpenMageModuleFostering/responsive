@@ -46,8 +46,11 @@
     
     /* quick access nav */
     .quick-access{text-align: left; padding-top: 15px; clear: both}
-    .header .links{float:left}
-    
+    .header .links{margin: 0px 0 6px}
+    .header .links .myaccount-text, .header .links .logout-text, .header .links .login-text, .header .links .cart-text, .header .links .checkout-text, .header .links .wishlist-text{display: none}
+    .header .links .myaccount-icon, .header .links .logout-icon, .header .links .login-icon, .header .links .cart-icon, .header .links .checkout-icon, .header .links .wishlist-icon{font-size: 1.5em}
+    .header .welcome-box{float: right; text-align: right}
+    .header .toplink-div{float: left; margin-bottom: 10px;}
     /* custoner login */
     .registered-customer .required{text-align: left; margin-top: 10px}    
     
@@ -83,13 +86,15 @@
     
     /* footer */
     .footer .footer-right{text-align: left}
+    
+    #popupcart{left: 15px;}
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
     
     /* catalog category */
-    .block-subscribe, .block-compare, .block-poll, .block-viewed, .block-tags, .paypal-logo{display: none}
+    .block-subscribe, .block-compare, .block-poll, .block-viewed, .block-tags, .paypal-logo, .block-wishlist{display: none}
     .col-main .category-image{display: none}
     
     /* catalog product view */
@@ -105,4 +110,7 @@
     .cart .title-buttons .checkout-types{float:left; margin-top: 10px;}
     .order-review .buttons-set button.button{float: left; margin-left: 0}
     
+    /* product review */
+    #product-review-table th{padding: 3px}
+    #product-review-table input[type="radio"]{margin:0; }
 }
