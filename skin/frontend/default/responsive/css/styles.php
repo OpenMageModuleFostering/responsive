@@ -27,6 +27,7 @@
     $textcolor = '#' . Mage::getStoreConfig('setting/themefont/textcolor');
     
     /* header */
+    $header_bgcolor = '#' . Mage::getStoreConfig('setting/header/bgcolor'); 
     $header_link_color = '#' . Mage::getStoreConfig('setting/header/link_color');
     $header_link_size = Mage::getStoreConfig('setting/header/link_size');
     
@@ -38,8 +39,10 @@
     $container_bgpositionrepeat = Mage::getStoreConfig('setting/body/bgrepeat');
     
     /* footer */
+    $footer_bgcolor = '#' . Mage::getStoreConfig('setting/footer/bgcolor');
     $footer_link_color = '#' . Mage::getStoreConfig('setting/footer/link_color');
     $footer_link_size = Mage::getStoreConfig('setting/footer/link_size');
+    
     // get default size 
     if ($footer_link_size == ''){
         $footer_link_size = $fontsize;
@@ -548,14 +551,14 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Header ================================================================================ */
 .logo { float:left; }
-.header{padding: 15px 0}
-/*.header-container { border-top:5px solid #0d2131; border-bottom:1px solid #415966; background:url(../images/bkg_header.jpg) 50% 0 repeat; }*/
+.header{padding: 15px 0 7px 0; background: <?php echo $header_bgcolor ?>}
+.header-container { margin-bottom:10px; /*border-top:5px solid #0d2131; border-bottom:1px solid #415966; background:url(../images/bkg_header.jpg) 50% 0 repeat; */ }
 /*.header { width:930px; margin:0 auto; padding:10px; text-align:right; position:relative; z-index:10; }*/
 /*.header .logo { float:left; margin:3px 0 10px 12px; text-decoration:none !important; }*/
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 /*.header h1.logo { margin:0; }*/
 .header .quick-access { /*float:right; width:600px; padding:28px 10px 0 0; */}
-.header .welcome-msg { margin-bottom:0; /*text-align:right; color:#fff; */}
+.header .welcome-msg { margin-bottom:0; /*text-align:right; */ color:#e26703; }
 .header .welcome-msg a { color:#ebbc58; }
 .header .form-search { /*position:absolute; top:0; right:29px; width:315px; height:30px; background:url(../images/bkg_form-search.gif) 0 0 no-repeat; padding:1px 0 0 16px; */}
 .header .form-search label { float:left; width:24px; height:21px; text-align:left; text-indent:-999em; overflow:hidden; }
@@ -1258,6 +1261,7 @@ tr.summary-details-excluded { font-style:italic; }
 .cart .cart-collaterals .col2-set { /*float:left; width:605px; */}
 .cart .cart-collaterals .col2-set .col-2 { /*width:294px; */}
 .btncartgroup{margin-top:15px;}
+.btncartgroup button{margin-bottom:7px;}
 .cart .crosssell { border:1px solid #cec3b6; background:#fafaec; padding:12px 15px; }
 .cart .crosssell h2 { font-size:13px; font-weight:bold; }
 .cart .crosssell .product-image { float:left; width:75px; height:75px; border:1px solid #d0cdc9; }
@@ -1756,8 +1760,8 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Footer ================================================================================ */
-.footer-container { border-top:<?php echo $footer_line_size ?> solid <?php echo $footer_line_color ?>; }
-.footer { /*width:930px;*/ margin:0 auto; padding:10px 10px 50px; color:<?php echo $footer_text_color ?>; font-size: <?php echo $footer_text_size ?>}
+.footer-container { }
+.footer { /*width:930px; margin:0 auto; */padding:10px 10px 50px; background: <?php echo $footer_bgcolor ?>; color:<?php echo $footer_text_color ?>; font-size: <?php echo $footer_text_size ?>; border-top:<?php echo $footer_line_size ?> solid <?php echo $footer_line_color ?>; }
 .footer .store-switcher { display:inline; margin:0 5px 0 0; color:#fff; }
 .footer .store-switcher label { font-weight:bold; vertical-align:middle; }
 .footer .store-switcher select { padding:0; vertical-align:middle; }
