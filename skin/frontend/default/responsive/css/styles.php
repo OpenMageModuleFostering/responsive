@@ -143,8 +143,8 @@ select option { padding-right:10px; }
 select.multiselect option { border-bottom:1px solid #b6b6b6; padding:2px 5px; }
 select.multiselect option:last-child { border-bottom:0; }
 textarea { overflow:auto; }
-input.radio { margin-right:3px; }
-input.checkbox { margin-right:3px; }
+input.radio {/* margin-right:3px; */}
+input.checkbox {/* margin-right:3px; */}
 input.qty { width:2.5em !important; }
 button.button::-moz-focus-inner { /*padding:0; border:0; */} /* FF Fix */
 /*button.button { -webkit-border-fit:lines; } *//* <- Safari & Google Chrome Fix */
@@ -332,7 +332,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .breadcrumbs li strong { font-weight:bold; }
 
 /* Page Heading */
-.page-title { width:100%; overflow:hidden; border-bottom:1px solid #ccc; margin:0 0 25px; }
+.page-title { width:100%; overflow:hidden; border-bottom:1px solid #ccc; margin:0 0 25px; padding-bottom:5px;}
 .page-title h1,
 .page-title h2 { margin:0; font-size:20px; color:#0a263c; }
 .page-title .separator { margin:0 3px; }
@@ -519,7 +519,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 /*.header h1.logo { margin:0; }*/
 .header .quick-access { /*float:right; width:600px; padding:28px 10px 0 0; */}
-.header .welcome-msg {/* margin:0; text-align:right; */color:#fff; }
+.header .welcome-msg { margin-bottom:0; /*text-align:right; */color:#fff; }
 .header .welcome-msg a { color:#ebbc58; }
 .header .form-search { /*position:absolute; top:0; right:29px; width:315px; height:30px; background:url(../images/bkg_form-search.gif) 0 0 no-repeat; padding:1px 0 0 16px; */}
 .header .form-search label { float:left; width:24px; height:21px; text-align:left; text-indent:-999em; overflow:hidden; }
@@ -538,7 +538,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header .form-language select { padding:0; }
 .header .form-language select.flags option { background-position:4px 50%; background-repeat:no-repeat; padding-left:25px; }
 .header .links { float:right;/* margin:0 0 6px; */}
-.header .links li { float:left; font-size:11px;/* background:url(../images/bkg_pipe1.gif) 100% 60% no-repeat;*/ padding:0 8px 0 7px; }
+.header .links li { float:left; font-size:11px;/* background:url(../images/bkg_pipe1.gif) 100% 60% no-repeat;*/ padding:10px 15px 0 0px; }
 .header .links a { color:#ebbc58; }
 .header .links .top-link-cart i{margin-left: 5px; color: #fff}
 .header-container .top-container { clear:both; padding:5px 10px 0 12px; text-align:right; }
@@ -1240,6 +1240,7 @@ tr.summary-details-excluded { font-style:italic; }
 .cart .shipping .buttons-set { margin:10px 0 0; border:0; padding:0; text-align:left; }
 .cart .discount .buttons-set button.button,
 .cart .shipping .buttons-set button.button { float:none; margin-left:0; }
+.cart .shipping .radio{display:inline-block}
 
 .cart .discount h2 { background-image:url(../images/i_discount.gif); }
 .cart .discount .input-box { margin:8px 0 0; /*width:260px; */}
@@ -1542,6 +1543,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* My Account ============================================================================= */
 .my-account .title-buttons .link-rss { float:none; margin:0; }
 .my-account .checkbox{display: inline-block}
+.my-account .limiter{text-align:right}
 /********** < Dashboard */
 .dashboard .welcome-msg { margin:0 0 1.5em 0; }
 .dashboard .welcome-msg p { margin:0; }
@@ -1606,7 +1608,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 .order-date { margin:10px 0; }
 
-.order-info-box { background:#fff url(../images/bkg_block-title.gif) 0 0 repeat-x; border:1px solid #d0cbc1; padding:12px 15px; margin:0 0 15px; }
+.order-info-box {border:1px solid #d0cbc1; padding:12px 0px 0px 0px; margin:0 0 15px; }
 .order-info-box h2 { font-weight:bold; font-size:13px; }
 .order-info-box .box-payment p { margin:0 0 3px; }
 .order-info-box .box-payment th { font-weight:bold; padding-right:7px; }
@@ -1864,6 +1866,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* custom CSS */
 /* checkout onepage */
 #checkout-step-login .radio, #checkoutSteps .radio{display: inline-block}
+#checkout-step-shipping input[type="checkbox"] {display:inline-block}
 
 /* social network block */
 #divnetworkshare{margin-top: 10px; text-align: left}

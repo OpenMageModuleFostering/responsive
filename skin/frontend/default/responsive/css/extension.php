@@ -1,9 +1,8 @@
 <h3>Overview</h3>
 <p>The responsive theme is written above the Magento community base theme. </p>
-<p>demo link <a href="http://responsive.asmarket.com.au/" target="_blank">http://responsive.asmarket.com.au/</a></p>
-<p>Please let me know If you have some issue to install.</p>
-<p>email to <a href="mailto:vuductrung2003@gmail.com">vuductrung2003@gmail.com</a></p>
-<p><a href="https://www.facebook.com/tonyvu2003">Facebook</a></p>
+<!--<p>Demo <a href="http://www.asmarket.com.au/responsive">Bootstrap Theme</a></p>-->
+<p>Read <a href="https://www.facebook.com/notes/tvcom-magento-addon/how-to-set-up-magento-bootstrap-theme/643891698985373">How to install bootstrap theme</a></p>
+<p>If you have any issue to install, let us know <a href="https://www.facebook.com/tvcom.addon">here</a></p>
 <h3>Feature</h3>
 <p>+ Support all different devices such as large computer, laptop, all tablets and mobile phone</p>
 <p>+ Theme custom is at the Admin backend</p>
