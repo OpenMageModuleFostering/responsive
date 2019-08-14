@@ -1,0 +1,71 @@
+/*
+*   Author: Tony Vu
+    Date: 08.12.2013
+    Description: Responsive css for hello theme
+
+    Ipad dimension: 768x1024
+    Iphone        : 640x960  
+    Desktop       : 1200
+    Laptop        : 992
+*/
+
+
+/*@media (min-width: 1200px) {}
+@media (min-width: 768px) {}
+@media (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 992px) {}
+@media (min-width: 992px) and (max-width: 1199px) {}*/
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    /* Catalog page */
+    .main .span12{}
+    /* End Catalog page */
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {}
+
+
+/* Landscape phone to portrait tablet */
+@media (min-width:768px){
+    /* quick access nav */
+    .quick-access{text-align: right}   
+    
+}
+@media (max-width: 767px) {
+    .col-right{margin-top: 20px;}
+    
+    /* quick access nav */
+    .quick-access{text-align: left; padding-top: 15px; clear: both}
+    .header .links{float:left}
+    
+    /* custoner login */
+    .registered-customer .required{text-align: left; margin-top: 10px}    
+    
+    /* checkout /cart */
+    .cart .totals{margin-top: 20px}
+    #shopping-cart-table .item-editable{display: none}
+    #shopping-cart-table .item-image{display: none}
+    
+    /* catalog category */
+    .pager-responsive .amount{display: none}
+    .pager-responsive .limiter label{display: none}
+    .pager-responsive .pagination{text-align: left}    
+    .sorter .view-mode{padding-left:0}
+    
+    /* homepage */
+    .home-callout{display: none}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    
+    /* catalog category */
+    .block-subscribe, .block-compare, .block-poll, .block-viewed, .block-tags, .paypal-logo{display: none}
+    
+    .col-main .category-image{display: none}
+    
+    
+}

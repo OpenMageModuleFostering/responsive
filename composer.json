@@ -1,0 +1,21 @@
+{
+    "name": "OpenMageModuleFostering/responsive",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Responsive theme for Magento Community version 
+
+It combines
+- Bootstrap v3
+- HTML5 
+- CSS3",
+    "authors": [
+    {
+        "name": "tony vu",
+        "email": "vuductrung2003@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
