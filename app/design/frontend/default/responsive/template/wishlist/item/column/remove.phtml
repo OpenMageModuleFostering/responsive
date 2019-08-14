@@ -23,7 +23,7 @@
  * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
+
 ?>
-<?php if ($this->isPossibleOnepageCheckout()):?>
-    <button type="button" title="<?php echo $this->__('Proceed to Checkout') ?>" class="button btn btn-danger btn-proceed-checkout btn-checkout<?php if ($this->isDisabled()):?> no-checkout<?php endif; ?>"<?php if ($this->isDisabled()):?> disabled="disabled"<?php endif; ?> onclick="window.location='<?php echo $this->getCheckoutUrl() ?>';"><?php echo $this->__('Proceed to Checkout') ?></button>
-<?php endif?>
+<a href="<?php echo $this->getItemRemoveUrl($this->getItem()); ?>" onclick="return confirmRemoveWishlistItem();" title="<?php echo $this->__('Remove Item') ?>"
+    class="btn-remove btn-remove2"><i class="fa fa-times"></i></a>
