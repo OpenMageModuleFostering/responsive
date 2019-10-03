@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Responsive theme for Magento Community version
